@@ -1,19 +1,38 @@
 ## HEAD
 
+### Documentation
+
+  * Update CI status badge (#363)
+
+### Development Fixes
+
+  * Add Ruby 3.1 to the CI matrix (#365)
+
+### Minor Enhancements
+
+  * Allow disabling of jekyll-feed while in development (#370)
+
+## 0.16.0 / 2022-01-03
+
+### Minor Enhancements
+
+  * Add support for `page.description` in front matter to become entry `<summary>` (#297)
+
+### Bug Fixes
+
+  * Fold private methods into the `:render` method as local variables (#327)
+  * Check `post.categories` instead of `post.category` (#357)
+  * Switched xml_escape for `<![CDATA[]]>` for post content (#332)
+
 ### Development Fixes
 
   * Add Ruby 3.0 to CI (#337)
   * Lock RuboCop to v1.18.x (#348)
   * Add workflow to release gem via GH Action (#355)
 
-### Bug Fixes
+### Documentation
 
-  * Fold private methods into the `:render` method as local variables (#327)
-  * Check `post.categories` instead of `post.category` (#357)
-
-### Minor Enhancements
-
-  * Add support for page.description in front matter to become entry `&lt;summary&gt;` (#297)
+  * Use `.atom` extension in documented examples since we write an Atom feed (#359)
 
 ## 0.15.1 / 2020-10-04
 

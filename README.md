@@ -2,7 +2,7 @@
 
 A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts
 
-[![Build Status](https://travis-ci.org/jekyll/jekyll-feed.svg)](https://travis-ci.org/jekyll/jekyll-feed) [![Gem Version](https://badge.fury.io/rb/jekyll-feed.svg)](https://badge.fury.io/rb/jekyll-feed)
+[![Continuous Integration](https://github.com/jekyll/jekyll-feed/actions/workflows/ruby.yml/badge.svg)](https://github.com/jekyll/jekyll-feed/actions/workflows/ruby.yml) [![Gem Version](https://badge.fury.io/rb/jekyll-feed.svg)](https://badge.fury.io/rb/jekyll-feed)
 
 ## Installation
 
@@ -40,7 +40,7 @@ Do you already have an existing feed someplace other than `/feed.xml`, but are o
 
 ```yml
 feed:
-  path: atom.xml
+  path: /blog/feed.atom
 ```
 
 To note, you shouldn't have to do this unless you already have a feed you're using, and you can't or wish not to redirect existing subscribers.
@@ -178,7 +178,7 @@ By default, collection feeds will be outputted to `/feed/<COLLECTION>.xml`. If y
 feed:
   collections:
     changes:
-      path: "/changes.xml"
+      path: "/changes.atom"
 ```
 
 Finally, collections can also have category feeds which are outputted as `/feed/<COLLECTION>/<CATEGORY>.xml`. Specify categories like so:
@@ -187,7 +187,7 @@ Finally, collections can also have category feeds which are outputted as `/feed/
 feed:
   collections:
     changes:
-      path: "/changes.xml"
+      path: "/changes.atom"
       categories:
         - news
         - updates
@@ -245,6 +245,16 @@ feed:
 ```
 
 Note that if you include a tag that is excluded a feed will not be generated for it.
+
+## Skip development
+
+Use `disable_in_development: true` if you want to turn off feed generation when `jekyll.environment == "development"`,
+but don't want to remove the plugin (so you don't accidentally commit the removal). Default value is `false`.
+
+```yml
+feed:
+  disable_in_development: true
+```
 
 ## Contributing
 
