@@ -1,5 +1,15 @@
 ## HEAD
 
+### Development Fixes
+
+  * Upgrade to Rake 13 to fix master (#381)
+
+### Documentation
+
+  * Fix typos in Readme (#384)
+
+## 0.17.0 / 2022-10-14
+
 ### Documentation
 
   * Update CI status badge (#363)
@@ -138,8 +148,6 @@
 ### Minor Enhancements
 
   * fix <entry> template for posts with post.lang defined (#168)
-
-## 0.9.3 / 2017-03-28
 
 ## 0.9.1 / 2017-02-17
 
