@@ -4,10 +4,15 @@
 
   * Upgrade to Rake 13 to fix master (#381)
   * feat(CI): Add Ruby 3.2/3.3 to the test matrix (#402)
+  * Fix style offenses (#414)
 
 ### Documentation
 
   * Fix typos in Readme (#384)
+
+### Minor Enhancements
+
+  * Icon and logo support with simple tests (#412)
 
 ## 0.17.0 / 2022-10-14
 
